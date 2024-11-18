@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #181A18;
+    --main-green: #164F4C;
+    --main-black: #000000;
+    --main-white: #fff;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 90%;
+}
+
+section {
+    padding: 5.25rem 0;
+}
+
+.nav-items {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
+.btn-secondary {
+    background-color: #EDF1F1 !important;
+    border: none;
+    color: var(--main-green);
+    width: 75px;
+    height: 45px;
+    font-size: 14px;
+}
+
+#dropdownMenuLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.btn:hover {
+    color: var(--main-green);
+}
+
+.hero-banner-form {
+    width: 100%;
+    max-width: 715px;
+    height: 100%;
+    max-height: 588px;
+    border-radius: 30px;
+    background-color: var(--main-white);
+    box-shadow: 3px 6px 19.6px 12px #164F4C33;
+    top: 14%;
+    right: 0;
+    left: 4%;
+}
+
+.hero-banner-form {
+    padding: 58px 48px;
+}
+
+.form-group {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: var(--main-green);
+}
+
+.form-control {
+    padding: 0.8rem !important;
+    border: 1px solid #164F4C;
+    border-radius: 20px;
+}
+
+#exampleFormControlSelect1 {
+    color: var(--main-green);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.rechercher-button {
+    background-color: var(--main-green);
+    cursor: pointer;
+}
+
+.icon {
+    filter: brightness(0) invert(1);
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 45px;
+    text-align: left;
+    color: var(--main-green);
+}
+.heading{
+    padding-bottom: 2.75rem;
+}
+
+.sub-heading {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: left;
+    padding-bottom: 2.125rem;
+}
+
+.message {
+    margin-top: 10px;
+    display: none;
+}
+
+.side-card-block,
+.slider-block {
+    box-shadow: 0px 4px 4px 0px #164F4C26;
+    border-radius: 10px;
+    border: 1px solid #164F4C1A;
+}
+
+.slider-block {
+    height: 100%;
+}
+
+.side-card-block {
+    background-color: var(--main-green);
+}
+
+.side-card-block span {
+    font-size: 14px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}
+
+.slider2-cards {
+    border: 10px;
+    box-shadow: 0px 0px 20px 0px #164F4C80;
+}
+
+.slider2-cards span {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: var(--main-green);
+    text-align: center;
+    color: var(--main-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stars img {
+    height: 25px;
+    width: 25px;
+}
+
+.nos-appartments .description {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: left;
+}
+
+/* MEDIA QUERIES */
+@media (min-width:350px) and (max-width:1440px) {
+    section {
+        padding: 1.25rem 0;
+    }
+
+    .main-heading {
+        padding-bottom: 0px;
+    }
+    .heading{
+        padding-bottom:0px;
+    }
+
+    .sub-heading {
+        padding-bottom: 8px;
+    }
+
+    .offcanvas-body .navbar-nav {
+        white-space: nowrap;
+    }
+
+    .side-card-block {
+        margin-bottom: 16px;
+    }
+
+    .col-xxl-10 {
+        padding: 0px !important;
+    }
+    .navbar-toggler{
+        padding:0px;
+    }
+    #thank-you-message h6{
+     font-size: 0.85rem !important;
+    }
+    .slider3-cards h6{
+        font-size: 12px !important;
+        white-space: nowrap;
+    }
+}
+@media (max-width:576px) {
+    .hero-banner {
+        padding: 0px !important;
+    }
+    .hero-image {
+        padding: 40px 0px 0px 0px;
+    }
+    .form-control{
+        padding:0.6rem !important;
+        font-size: 12px;
+    }
+    label{
+        font-size:14px;
+    }
+  #exampleFormControlSelect1{
+    font-size: 12px;
+  }
+  .hero-banner-form h1{
+    font-size: 18px;
+  }
+  .hero-banner-form p{
+    font-size:11px;
+    margin-bottom:0px;
+  }
+  #rechercher-btn {
+    margin-top: 0px !important;
+  }
+  #rechercher-btn h6{
+    font-size: 15px !important;
+  }
+  #rechercher-btn .icon{
+    width:15px;
+    height:15px;
+  }
+  .hero-banner-form {
+    padding: 34px 30px;
+    width: 75%;
+    max-width: 715px;
+    height: 56%;
+    max-height: 530px;
+    left: 14%;
+  }
+  .main-heading{
+    font-size: 22px;
+}
+.sub-heading{
+    font-size: 18px;
+}
+.le-guide-desc{
+    margin-bottom: 24px;
+}
+.slider2{
+    padding-top: 0px !important;
+}
+.slider2-cards{
+    padding: 24px !important;
+}
+.location h6{
+    font-size: 18px !important;
+}
+.nos-appartments h5{
+    font-size:12px;
+    white-space: nowrap;
+}
+.location h5{
+    font-size:12px;
+    white-space: nowrap; 
+}
+.flex-living h5{
+    font-size:12px;
+    white-space: nowrap; 
+}
+}
+
+@media (min-width:576px) and (max-width:767px) {
+    section {
+        padding: 3.25rem 0;
+    }
+
+    .hero-banner {
+        padding: 0px !important;
+    }
+    
+    .hero-banner-form {
+        left: 10%;
+        width: 80%;
+        max-width: 600px;
+        height: 80%;
+        max-height: 495px;
+        padding: 12px 40px;
+    }
+    .main-heading{
+        font-size: 26px;
+    }
+    .sub-heading{
+        font-size: 24px;
+    }
+    .le-guide-desc{
+        margin-bottom: 24px;
+    }
+    .location h5,h6{
+        font-size: 18px !important;
+    }
+    .nos-appartments h5{
+        font-size: 18px;
+    }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .hero-banner-form {
+        left: 12%;
+        width: 100%;
+        max-width: 600px;
+        height: 100%;
+        max-height: 500px;
+    }
+    .main-heading{
+        font-size:30px;
+    }
+    .sub-heading{
+        font-size:32px;
+    }
+    .location, .nos-appartments h5,h6{
+        font-size: 16px !important;
+    }
+    .location p{
+        margin-bottom:0px;
+    }
+    .location .le-guide-desc{
+        padding: 36px 0px;
+    }
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .navbar-nav .nav-item {
+        padding-left: 4px !important;
+    }
+
+    .contact-us {
+        margin: 0 6px !important;
+    }
+
+    #dropdownMenuLink {
+        font-size: 14px;
+    }
+
+    .offcanvas-body .navbar-nav {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .main-heading{
+        font-size:32px;
+    }
+    .sub-heading{
+        font-size:34px;
+    }
+    .location, .nos-appartments h5,h6{
+        font-size: 22px !important;
+    }
+    .location p{
+        margin-bottom:0px;
+    }
+    .location .le-guide-desc{
+        padding: 75px 0px;
+    }
+}
+
+@media (min-width:1200px) and (max-width:1500px){
+    .main-heading{
+        font-size:36px;
+    }
+    .sub-heading{
+        font-size:35px;
+    }
+    .location, .nos-appartments h5{
+        font-size: 18px;
+    }
+    .location h6{
+        font-size: 28px !important;
+    }
+    .location p{
+        margin-bottom:0px;
+        font-size: 18px;
+    }
+    .location .le-guide-desc{
+        padding: 75px 0px;
+    }
+}
+.slick-slide {
+	transform: scale(0.8);
+	transition: all 0.4s ease-in-out;
+	padding: 20px 0;
+}
+.slick-slide img {
+	max-width: 100%;
+	transition: all 0.4s ease-in-out;
+}
+
+.slick-center {
+	transform: scale(1);
+}
+
+.slick-dots{
+    bottom: -75px !important;
+}
+
+@media (min-width:330px) and (max-width:1200px){
+   .slider-cards p{
+    padding:0px !important;
+   }
+}
